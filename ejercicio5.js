@@ -1,5 +1,4 @@
-let meses = [
-  "meses",
+const array = [
   "enero",
   "febrero",
   "marzo",
@@ -14,5 +13,10 @@ let meses = [
   "diciembre",
 ];
 
-let question = window.prompt('Introduce un número del 1 al 12 para mostrar el mes en pantalla');
-console.log(mes[question])
+let eleccion = parseInt(window.prompt('Introduce un número del 1 al 12'))
+
+if(eleccion<=12 && eleccion<1){
+  document.getElementById("div").innerHTML = `<p> ${array[eleccion-1]}</p>`
+} else {
+  document.getElementById("div").innerHTML = `En estos momentos solo tenemos disponible 12 meses`
+}

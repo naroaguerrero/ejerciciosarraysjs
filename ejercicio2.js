@@ -1,9 +1,7 @@
-let word = window.prompt("Escribe una palabra");
-let word2 = window.prompt("Escribe otra palabra");
-let word3 = window.prompt("Escribe una última palabra");
+let str1 = window.prompt('Introduce una palabra')
+let str2 = window.prompt('Introduce otra palabra')
+let str3 = window.prompt('Introduce una más palabra')
 
-let words = [word, word2, word3];
-words[0] = word2;
-words[1] = word3;
-words[2] = word;
-console.log(words);
+let array = [str1,str2,str3]
+
+document.getElementById("div").innerHTML = `<p> ${array[1]} </p>` + `<p> ${array[2]} </p>` + `<p> ${array[0]} </p>`

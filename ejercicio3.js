@@ -1,9 +1,12 @@
-let number = []
+let array = [];
 
-for(let i = 0; i<=10; i++){
-    number[i] = 20 - i 
+let parrafos = "";
+
+for (let i = 0; i <= 10; i++) {
+  array[i] = 20 - i;
+}
+for (let i = 0; i < array.length; i++) {
+  parrafos += `<p> ${array[i]}</p>`;
 }
 
-for(let i = 0; i<=number.length; i++){
-    console.log(number[i])
-}
+document.getElementById("div").innerHTML = parrafos;

@@ -1,9 +1,12 @@
-let number = [];
-let number2 
+let array = [];
 
 for (let i = 0; i < 10; i++) {
-    let number = parseInt(window.prompt('Escribe un número'))
-    const element = Array.push(number2)
+  array.push(window.prompt("Escribe un número"));
 }
 
-console.log(array)
+let parrafos = "";
+for (let i = 0; i < array.length; i++) {
+  parrafos = parrafos + `<p> ${array[i]}</p>`;
+}
+
+document.getElementById("div").innerHTML = parrafos;
